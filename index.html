@@ -11,6 +11,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
      <section class="card" id="html-section">
@@ -76,18 +77,53 @@
       <ul>
         <li>git status: checks what branch we are currently on.</li>
         <li>git checkout -b "branch-name": creates a new branch and switches to it.</li>
+        <li>  (checkout): command is to move the working branch to a new branch.</li>
+        <li>  (-b): flag creates a new branch.</li>
+        <li>  "branch-name": prefix feature to indicate that it is a feature. name of new branch. ex. feature/starer-code</li>
         <li>git checkout main: switches to main branch</li>
-        <li>git add -A: add the changed files in our working directory to the stagin area of Git. (stage changes).</li>
+        
+        <li><b>Steps to save our work to GitHub:</b></li>
+        <li>git add -A: add the changed files in our working directory to the staging area of Git. (stage changes).</li>
+        <li>  (add): flag adds modifications in the current working brank to the staging area.</li>
+        <li>  (-A): flag indicates that we want to add all changes.</li>
         <li>git commit -m "description of change": once changes are staged, we can commit them to our repository. Once completed, our Git Repository is now up to date with our directory.</li>
-        <li>-m flag: used to associate a message with our commit. Short descriptive messages of change implemented.</li>
-        <li>git pull origin main: pull the latest "main" branch. / make sure branch is up-to-date. (do before pushing code).</li>
+        <li>  (-m): flag used to associate a message with our commit. Short descriptive messages of change implemented.</li>
+        <li>git pull origin main: pull the latest "main" branch. / make sure branch is up-to-date. *do before pushing code making sure branch is up to date*.</li>
+        <li>  (pull): command to receive a branch's modicfaction into the local environemnt.</li>
+        <li>  (origin): keyword indicates the branch. ex. main.</li>
+        <li>  (main): indicates the branch. main is from GitHub repo.</li>
         <li>git push origin "name-of-branch": push up all of our changes.</li>
-      </ul>
+        <li>  (push): command 1. you can create a new remote branch. 2. add new changes to an existing branch.</li>
+       </ul>
      </section>
      <section class="card" id="javascript-section">
       <h2>Javascript</h2>
       <ul>
-        <li>Enter your JavaScript notes here.</li>
+        <li>variable: (keyword: var) a named container that allows us to store data in oure code.</li>
+        <li>(=) assignment operator: assigns specific data that we want stored in our variable.</li>
+        <li>ex. var "name" = "data stored" </li>
+        <li>string: includes more than 1 stored data. *CONTAINED IN (")*</li>
+        <li>(;) : every Javascript line of code ends in a (;)</li>
+        <li>console.log (method to the file): used to output a message to the web console by adding an ARGUMENT.</li>
+        <li>console (console.log): refers to the test environment that developers use to check out their code.</li>
+        <li>.log() (console.log): is a *METHOD* / set of instructions that can be executed by a computer. Will output what is added in the parentheses to the console.</li>
+        <li>(script src="./assets/script.js/file_location")(/script): used to link script.js file to index.html file. (linked with BODY ELEMENT)</li>
+        <li>control flow: is the order in which a computer executes code in a script. Javascript code runs from first statement down to the last statement.</li>
+        <li>(if) conditional statement: code will only execute IF the statement meets a condition or is true.</li>
+        <li>(else if) conditional statement: adds more than 1 condition on top of (if) statement.</li>
+        <li>Boolean: logical data type that can have only the values true or false.</li>
+        <li>truthy: (value that is true) the if statement will do whatever action we ask it to do in between the curly brackets.</li>
+        <li>falsy: (value that is not true) the computer will ignore whatever is in between the curly brackets.</li>
+        <li>ex. falsy values: 0, -0, On, "", null, undefined, NaN, fales.</li>
+        <li>conditional statements and loops: control the order in which code is executed or if it is een executed at all.</li>
+        <li>(===) strict equality operator: checks to see if two values are equal and returns a Boolean result true if they are equal and false if they are not.</li>
+        <li>array: a single variable that is used to hold a group of data (usually related data).</li>
+        <li>index: a number which identifies the data in the array. (starts with 0)</li>
+        <li>(for) loops: uses the predictable patter of indices to perform a task on all the items in an array by allowing a signle code block to be executed over and over.</li>
+        <li>statement: the starting point of the loop. - ex. var x = 0; </li>
+        <li>condition: the second statement - ex. x < name.length;</li>
+        <li>final statement: allows the array to iterate over each item. - ex. x++ or x+1</li>
+        <li>comment out code: makes code inactive without deleting it incase you need it later. Use (/* before) and (*/ after) a block of code.</li>
       </ul>
      </section>
     </main>
@@ -95,5 +131,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
